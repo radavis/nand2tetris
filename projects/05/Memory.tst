@@ -1,6 +1,3 @@
-// This file is part of www.nand2tetris.org
-// and the book "The Elements of Computing Systems"
-// by Nisan and Schocken, MIT Press.
 // File name: projects/05/Memory.tst
 
 load Memory.hdl,
@@ -79,7 +76,7 @@ tock,
 output;
 
 set load 0,
-set address %X2234,		// Did not also write to upper RAM or Screen 
+set address %X2234,		// Did not also write to upper RAM or Screen
 eval, output;
 set address %X6234,
 eval, output;
@@ -93,7 +90,7 @@ tock,
 output;
 
 set load 0,
-set address %X0345,		// Did not also write to lower RAM or Screen 
+set address %X0345,		// Did not also write to lower RAM or Screen
 eval, output;
 set address %X4345,
 eval, output;

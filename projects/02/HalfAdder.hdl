@@ -1,6 +1,3 @@
-// This file is part of www.nand2tetris.org
-// and the book "The Elements of Computing Systems"
-// by Nisan and Schocken, MIT Press.
 // File name: projects/02/HalfAdder.hdl
 
 /**
@@ -9,7 +6,7 @@
 
 CHIP HalfAdder {
     IN a, b;    // 1-bit inputs
-    OUT sum,    // Right bit of a + b 
+    OUT sum,    // Right bit of a + b
         carry;  // Left bit of a + b
 
     PARTS:

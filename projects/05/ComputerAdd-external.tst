@@ -1,6 +1,3 @@
-// This file is part of www.nand2tetris.org
-// and the book "The Elements of Computing Systems"
-// by Nisan and Schocken, MIT Press.
 // File name: projects/05/ComputerAdd-external.tst
 
 load Computer.hdl,
@@ -9,7 +6,7 @@ compare-to ComputerAdd-external.cmp,
 output-list time%S1.4.1 reset%B2.1.2 RAM16K[0]%D1.7.1 RAM16K[1]%D1.7.1 RAM16K[2]%D1.7.1;
 
 // Load a program written in the Hack machine language.
-// The program adds the two constants 2 and 3 and writes the result in RAM[0]. 
+// The program adds the two constants 2 and 3 and writes the result in RAM[0].
 ROM32K load Add.hack,
 output;
 

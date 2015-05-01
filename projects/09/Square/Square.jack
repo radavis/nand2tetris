@@ -1,11 +1,8 @@
-// This file is part of www.nand2tetris.org
-// and the book "The Elements of Computing Systems"
-// by Nisan and Schocken, MIT Press.
 // File name: projects/09/Square/Square.jack
 
 /**
  * Implements a graphic square. A graphic square has a screen location
- * and a size. It also has methods for drawing, erasing, moving on the 
+ * and a size. It also has methods for drawing, erasing, moving on the
  * screen, and changing its size.
  */
 class Square {
