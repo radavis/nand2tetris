@@ -1,5 +1,7 @@
 # nand2tetris
 
+Notes and code from the book [_Elements of Computing Systems_](http://www.nand2tetris.org/).
+
 ![Hardware/Software Hierarchy](images/hardware-software_hierarchy.png)
 
 Construct a complete computer system: hardware + software.
@@ -68,6 +70,33 @@ Translates assembly code into binary code.
 ![Boolean Functions](images/boolean_functions.png)
 
 Every digital device is built from the same building blocks: elementary logic gates (which consist of transistors). We can use the __Nand gate__ to construct every other logic gate.
+
+### Implementation of a gate in HDL
+
+![HDL implementation of Xor](images/hdl_xor_gate.png)
+
+Fully testing individual chips is important. Fully testing more complex systems with 100% certainty is not feasible.
+
+
+### Nand gate
+
+![Nand Truth Table](images/nand_truth_table.png)
+
+### Implementation of Gates
+
+* [x] and
+* [x] or
+* [x] xor
+* [x] mux
+* [x] dmux
+* [x] not16
+* [ ] and16
+* [ ] or16
+* [ ] mux16
+* [ ] mux4way16
+* [ ] mux8way16
+* [ ] dmux4way
+* [ ] dmux8way
 
 ## Quotes
 
