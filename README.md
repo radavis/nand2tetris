@@ -24,6 +24,7 @@ chmod +x /usr/local/bin/HardwareSimulator
 ```
 
 ### Run a test
+From the `nand2tetris` folder.
 ```
-HardwareSimulator Nand.tst
+HardwareSimulator projects/01/Nand.tst
 ```
