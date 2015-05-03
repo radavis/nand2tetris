@@ -96,6 +96,7 @@ Fully testing individual chips is important. Fully testing more complex systems 
 * [x] Mux16
 * [x] Mux4Way16
 * [x] Mux8Way16
+* [ ] Or8Way
 * [x] DMux4Way
 * [x] DMux8Way
 
@@ -167,6 +168,9 @@ Fully testing individual chips is important. Fully testing more complex systems 
 ### ALU
 ![ALU](images/alu.png)
 
+* First step: create a logic circuit that manipulates a 16-bit input according to the nx and zx control bits
+* nx - negate input
+* zx - zero input
 
 ### Implementation of Gates (Project 02)
 

@@ -14,39 +14,39 @@ CHIP DMux8Way {
 
     PARTS:
     Mux(
-      a = in,
-      b = false,
-      sel = sel[2],
-      out = muxA
+        a = in,
+        b = false,
+        sel = sel[2],
+        out = muxA
     );
 
     Not(
-      in = sel[2],
-      out = notSel2
+        in = sel[2],
+        out = notSel2
     );
 
     Mux(
-      a = in,
-      b = false,
-      sel = notSel2,
-      out = muxB
+        a = in,
+        b = false,
+        sel = notSel2,
+        out = muxB
     );
 
     DMux4Way(
-      in = muxA,
-      sel = sel[0..1],
-      a = a,
-      b = b,
-      c = c,
-      d = d
+        in = muxA,
+        sel = sel[0..1],
+        a = a,
+        b = b,
+        c = c,
+        d = d
     );
 
     DMux4Way(
-      in = muxB,
-      sel = sel[0..1],
-      a = e,
-      b = f,
-      c = g,
-      d = h
+        in = muxB,
+        sel = sel[0..1],
+        a = e,
+        b = f,
+        c = g,
+        d = h
     );
 }

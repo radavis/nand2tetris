@@ -14,32 +14,32 @@ CHIP DMux4Way {
 
     PARTS:
     Mux(
-      a = in,
-      b = false,
-      sel = sel[1],
-      out = muxA
+        a = in,
+        b = false,
+        sel = sel[1],
+        out = muxA
     );
 
     Not(in = sel[1], out = notSel1);
 
     Mux(
-      a = in,
-      b = false,
-      sel = notSel1,
-      out = muxB
+        a = in,
+        b = false,
+        sel = notSel1,
+        out = muxB
     );
 
     DMux(
-      in = muxA,
-      sel = sel[0],
-      a = a,
-      b = b
+        in = muxA,
+        sel = sel[0],
+        a = a,
+        b = b
     );
 
     DMux(
-      in = muxB,
-      sel = sel[0],
-      a = c,
-      b = d
+        in = muxB,
+        sel = sel[0],
+        a = c,
+        b = d
     );
 }

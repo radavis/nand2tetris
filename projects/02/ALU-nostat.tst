@@ -1,6 +1,4 @@
-// This file is part of the materials accompanying the book
-// "The Elements of Computing Systems" by Nisan and Schocken,
-// MIT Press. Book site: www.idc.ac.il/tecs// File name: projects/02/ALU-nostat.tst
+// File name: projects/02/ALU-nostat.tst
 
 // ALU-nostat.tst provides a partial test of the ALU chip.
 // It IS NOT a replacement for ALU.tst.
