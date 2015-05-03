@@ -23,7 +23,8 @@ It is possible to build all of these components independently via the process of
 ![Chapter Breakdown](images/human-thought-to-physics.png)
 
 ## Getting Set Up (OSX)
-Extract nand2tetris.zip to `~/Desktop`. Having this folder anywhere else doesn't seem to work correctly.
+
+Extract nand2tetris.zip.
 
 ## Hardware Simulator
 
@@ -84,19 +85,19 @@ Fully testing individual chips is important. Fully testing more complex systems 
 
 ### Implementation of Gates (Project 01)
 
-* [x] and
-* [x] or
-* [x] xor
-* [x] mux
-* [x] dmux
-* [x] not16
-* [x] and16
-* [x] or16
-* [x] mux16
-* [x] mux4way16
-* [x] mux8way16
-* [x] dmux4way
-* [x] dmux8way
+* [x] And
+* [x] Or
+* [x] Xor
+* [x] Mux
+* [x] DMux
+* [x] Not16
+* [x] And16
+* [x] Or16
+* [x] Mux16
+* [x] Mux4Way16
+* [x] Mux8Way16
+* [x] DMux4Way
+* [x] DMux8Way
 
 ## Boolean Arithmetic
 
@@ -148,16 +149,20 @@ Fully testing individual chips is important. Fully testing more complex systems 
 * Negative numbers start with one
 
 
+### HalfAdder
+![HalfAdder](images/half-adder.png)
+
 ### ALU
 ![ALU](images/alu.png)
 
 
 ### Implementation of Gates (Project 02)
 
-* [ ] Half-adder
-* [ ] Full-adder
-* [ ] Adder
-* [ ] Incrementer
+* [ ] HalfAdder
+* [ ] FullAdder
+* [ ] Add16
+* [ ] Inc16
+* [ ] ALU-nostat
 * [ ] ALU
 
 
