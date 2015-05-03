@@ -16,7 +16,7 @@ Construct a complete computer system: hardware + software.
   - Compiler
   - OS
 
-These components can be written in any modern programming language.
+The software components can be written in any modern programming language.
 
 It is possible to build all of these components independently via the process of abstraction: ignoring the details of __how__ a component functions, and utilizing the component for what it __does__.
 
@@ -30,7 +30,7 @@ Extract nand2tetris.zip.
 
 ### Add to path
 ```
-ln -s ~/Desktop/nand2tetris/tools/HardwareSimulator.sh /usr/local/bin/HardwareSimulator
+ln -s ~/code/nand2tetris/tools/HardwareSimulator.sh /usr/local/bin/HardwareSimulator
 chmod +x /usr/local/bin/HardwareSimulator
 ```
 
@@ -157,8 +157,9 @@ Fully testing individual chips is important. Fully testing more complex systems 
 
 ### FullAdder
 ![FullAdder](images/full-adder.png)
+![FullAdder Logic Diagram](images/full-adder_logic_diagram.svg)
 
-* implement with two HalfAdders
+* implement with two HalfAdders or elementary gates
 
 ### Add16
 ![Add16](images/add16.png)
