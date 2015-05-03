@@ -95,7 +95,7 @@ Fully testing individual chips is important. Fully testing more complex systems 
 * [x] mux16
 * [x] mux4way16
 * [x] mux8way16
-* [ ] dmux4way
+* [x] dmux4way
 * [ ] dmux8way
 
 ## Quotes
