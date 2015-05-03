@@ -1,9 +1,17 @@
 #!/bin/bash
 
-Gates=( 'And' 'Or' 'Xor' 'Mux' 'DMux' 'Not16' 'And16' 'Or16' 'Mux16' 'Mux4Way16' 'Mux8Way16' 'DMux4Way' 'DMux8Way' );
+# Project01Gates=( 'And' 'Or' 'Xor' 'Mux' 'DMux' 'Not16' 'And16' 'Or16' 'Mux16' 'Mux4Way16' 'Mux8Way16' 'DMux4Way' 'DMux8Way' );
 
-for gate in "${Gates[@]}"; do
+# for gate in "${Project01Gates[@]}"; do
+#   echo "Testing '$gate'"
+#   HardwareSimulator projects/01/$gate.tst
+#   echo
+# done
+
+Project02Gates=( 'HalfAdder' 'FullAdder' 'Add16' 'Inc16' 'ALU-nostat' 'ALU' );
+
+for gate in "${Project02Gates[@]}"; do
   echo "Testing '$gate'"
-  HardwareSimulator projects/01/$gate.tst
+  HardwareSimulator projects/02/$gate.tst
   echo
 done

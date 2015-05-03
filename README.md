@@ -152,13 +152,24 @@ Fully testing individual chips is important. Fully testing more complex systems 
 ### HalfAdder
 ![HalfAdder](images/half-adder.png)
 
+* sum - use `xor` gate
+* carry - use `and` gate
+
+### FullAdder
+![FullAdder](images/full-adder.png)
+
+* implement with two HalfAdders
+
+### Add16
+![Add16](images/add16.png)
+
 ### ALU
 ![ALU](images/alu.png)
 
 
 ### Implementation of Gates (Project 02)
 
-* [ ] HalfAdder
+* [x] HalfAdder
 * [ ] FullAdder
 * [ ] Add16
 * [ ] Inc16
