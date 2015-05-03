@@ -173,7 +173,7 @@ Fully testing individual chips is important. Fully testing more complex systems 
 * [x] HalfAdder
 * [x] FullAdder
 * [x] Add16
-* [ ] Inc16
+* [x] Inc16
 * [ ] ALU-nostat
 * [ ] ALU
 
