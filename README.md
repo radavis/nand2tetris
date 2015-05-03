@@ -51,7 +51,7 @@ class Main {
 }
 ```
 
-Compiliation is the process of parsing text, to a low-level language that a computer understands (machine code). This process is broken up into several layers of abstraction and typically involves three translators: a compiler, a vm, and an assembler.
+Compiliation is the process of parsing text and converting it into a low-level language that a computer understands (machine code). This process is broken up into several layers of abstraction and typically involves three translators: a compiler, a vm, and an assembler.
 
 ## Compiler
 The compiler's task is broken into two stages:
@@ -96,7 +96,7 @@ Fully testing individual chips is important. Fully testing more complex systems 
 * [x] mux4way16
 * [x] mux8way16
 * [x] dmux4way
-* [ ] dmux8way
+* [x] dmux8way
 
 ## Quotes
 
