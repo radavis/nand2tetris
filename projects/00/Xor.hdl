@@ -1,4 +1,4 @@
-
+// File name: projects/00/Xor.tst
 
 /**
  *  Exclusive-or gate: out = !(a == b).
