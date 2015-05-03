@@ -171,8 +171,8 @@ Fully testing individual chips is important. Fully testing more complex systems 
 ### Implementation of Gates (Project 02)
 
 * [x] HalfAdder
-* [ ] FullAdder
-* [ ] Add16
+* [x] FullAdder
+* [x] Add16
 * [ ] Inc16
 * [ ] ALU-nostat
 * [ ] ALU
