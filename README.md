@@ -52,7 +52,7 @@ class Main {
 }
 ```
 
-Compiliation is the process of parsing text and converting it into a low-level language that a computer understands (machine code). This process is broken up into several layers of abstraction and typically involves three translators: a compiler, a vm, and an assembler.
+__Compilation__ is the process of parsing text and converting it into a low-level language that a computer understands (machine code). This process is broken up into several layers of abstraction and typically involves three translators: a __compiler__, a __vm__, and an __assembler__.
 
 ## Compiler
 The compiler's task is broken into two stages:
@@ -178,9 +178,17 @@ Fully testing individual chips is important. Fully testing more complex systems 
 * [x] FullAdder
 * [x] Add16
 * [x] Inc16
-* [ ] ALU-nostat
-* [ ] ALU
+* [x] ALU-nostat
+* [x] ALU
 
+
+## References
+
+* [Course Website](http://www.nand2tetris.org/)
+* [Forum](http://nand2tetris-questions-and-answers-forum.32033.n3.nabble.com/)
+* [HDL Survival Guide](http://www.nand2tetris.org/software/HDL%20Survival%20Guide.html)
+* [Hack Chipset API](hack-chipset-api.md)
+* [ALU Worksheet](http://nand2tetris-questions-and-answers-forum.32033.n3.nabble.com/file/n95834/alu_worksheet.pdf)
 
 ## Quotes
 
