@@ -181,6 +181,43 @@ Fully testing individual chips is important. Fully testing more complex systems 
 * [x] ALU-nostat
 * [x] ALU
 
+## Sequential Logic
+
+__Combinational devices__ provide calculation services.
+
+__Sequential devices__...
+* operate on data and a clock signal
+* provide storage and syncronization services
+* can be based on one device: "data flip flop" or __DFF__
+
+### SR Flip-Flop
+![SR Flip-Flop Diagram](images/sr_flip-flop_logic_diagram.svg)
+
+### DFF
+![DFF Diagram](images/dff_logic_diagram.jpg)
+
+![DFF Implementation](images/dff_implementation.png)
+
+Memory devices are made from numerous flip-flops, all regulated by the same master clock.
+
+### Clock
+
+* tick - low phase
+* tock - high phase
+* implemented by an oscillator in production hardware
+
+### Implementation of Sequential Logic (Project 03)
+
+The DFF is considered a primitive device and does not need to be implemented.
+
+* [ ] Bit
+* [ ] Register
+* [ ] RAM8
+* [ ] RAM64
+* [ ] RAM512
+* [ ] RAM4K
+* [ ] RAM16K
+* [ ] PC
 
 ## References
 

@@ -8,10 +8,26 @@
 #   echo
 # done
 
-Project02Gates=( 'HalfAdder' 'FullAdder' 'Add16' 'Inc16' 'ALU-nostat' 'ALU' );
+# Project02Gates=( 'HalfAdder' 'FullAdder' 'Add16' 'Inc16' 'ALU-nostat' 'ALU' );
 
-for gate in "${Project02Gates[@]}"; do
+# for gate in "${Project02Gates[@]}"; do
+#   echo "Testing '$gate'"
+#   HardwareSimulator projects/02/$gate.tst
+#   echo
+# done
+
+Project03aGates=( 'Bit' 'Register' 'RAM8' 'RAM64' 'PC' );
+
+for gate in "${Project03aGates[@]}"; do
   echo "Testing '$gate'"
-  HardwareSimulator projects/02/$gate.tst
+  HardwareSimulator projects/03/a/$gate.tst
   echo
 done
+
+# Project03bGates=( 'RAM512' 'RAM4K' 'RAM16K' );
+
+# for gate in "${Project03bGates[@]}"; do
+#   echo "Testing '$gate'"
+#   HardwareSimulator projects/03/b/$gate.tst
+#   echo
+# done
