@@ -2,7 +2,7 @@
 
 /**
  * 16-bit multiplexMux:
- * fMux i = 0..15 out[i] = a[i] if sel == 0
+ * Mux i = 0..15 out[i] = a[i] if sel == 0
  *                        b[i] if sel == 1
  */
 

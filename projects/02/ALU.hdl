@@ -39,7 +39,58 @@ CHIP ALU {
         ng; // 1 if (out < 0),  0 otherwise
 
     PARTS:
-    Not16(
 
+    // Zero inputs
+    Mux16(
+        a = x,
+        b[0..15] = false,
+        sel = zx,
+        out = zeroMuxX
+    );
+
+    Mux16(
+        a = y,
+        b[0..15] = false,
+        sel = zy,
+        out = zeroMuxY
+    );
+
+    // Negate inputs
+    Not16(in = zeroMuxX, out = notX);
+    Not16(in = zeroMuxY, out = notY);
+
+    Mux16(
+        a = zeroMuxX,
+        b = notX,
+        sel = nx,
+        out = notMuxX
+    );
+
+    Mux16(
+        a = zeroMuxY,
+        b = notY,
+        sel = ny,
+        out = notMuxY
+    );
+
+    // Add or And inputs
+    Add16(a = notMuxX, b = notMuxY, out = xPlusY);
+    And16(a = notMuxX, b = notMuxY, out = xAndY);
+
+    Mux16(
+        a = xAndY,
+        b = xPlusY,
+        sel = f,
+        out = muxF
+    );
+
+    // Negate output
+    Not16(in = muxF, out = notF);
+
+    Mux16(
+        a = muxF,
+        b = notF,
+        sel = no,
+        out = out
     );
 }
