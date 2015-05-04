@@ -8,7 +8,7 @@
 #   echo
 # done
 
-Project02Gates=( 'HalfAdder' 'FullAdder' 'Add16' 'Inc16' 'ALU-nostat' );
+Project02Gates=( 'HalfAdder' 'FullAdder' 'Add16' 'Inc16' 'ALU-nostat' 'ALU' );
 
 for gate in "${Project02Gates[@]}"; do
   echo "Testing '$gate'"
