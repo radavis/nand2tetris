@@ -12,5 +12,40 @@ CHIP RAM64 {
     OUT out[16];
 
     PARTS:
-    // Put your code here:
+    // address MSB selects RAM8
+    // address LSB selects the Register
+    DMux8Way(
+      in = load,
+      sel = address[3..5],
+      a = selR0,
+      b = selR1,
+      c = selR2,
+      d = selR3,
+      e = selR4,
+      f = selR5,
+      g = selR6,
+      h = selR7
+    );
+
+    RAM8(in = in, load = selR0, address = address[0..2], out = r0);
+    RAM8(in = in, load = selR1, address = address[0..2], out = r1);
+    RAM8(in = in, load = selR2, address = address[0..2], out = r2);
+    RAM8(in = in, load = selR3, address = address[0..2], out = r3);
+    RAM8(in = in, load = selR4, address = address[0..2], out = r4);
+    RAM8(in = in, load = selR5, address = address[0..2], out = r5);
+    RAM8(in = in, load = selR6, address = address[0..2], out = r6);
+    RAM8(in = in, load = selR7, address = address[0..2], out = r7);
+
+    Mux8Way16(
+      a = r0,
+      b = r1,
+      c = r2,
+      d = r3,
+      e = r4,
+      f = r5,
+      g = r6,
+      h = r7,
+      sel = address[3..5],
+      out = out
+    );
 }
