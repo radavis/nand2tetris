@@ -210,8 +210,8 @@ Memory devices are made from numerous flip-flops, all regulated by the same mast
 
 The DFF is considered a primitive device and does not need to be implemented.
 
-* [ ] Bit
-* [ ] Register
+* [x] Bit
+* [x] Register
 * [ ] RAM8
 * [ ] RAM64
 * [ ] RAM512
