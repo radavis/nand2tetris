@@ -91,23 +91,15 @@ CHIP ALU {
         a = muxF,
         b = notF,
         sel = no,
-        out = notOut
+        out = out,
+        out[0..7] = lowZrOut,
+        out[8..15] = highZrOut,
+        out[15] = ng
     );
 
-    // output
-    Not16(in = notOut, out = notNotOut);
-    Not16(in = notNotOut, out = out);
-
     // zr flag
-    Not16(in = notOut, out = zrOut);
-    Not16(in = zrOut, out[0..7] = lowZrOut, out[8..15] = highZrOut);
-
     Or8Way(in = lowZrOut, out = zr0);
     Or8Way(in = highZrOut, out = zr1);
     Or(a = zr0, b = zr1, out = notZr);
     Not(in = notZr, out = zr);
-
-    // zg flag
-    Not16(in = notOut, out = notNg);
-    Not16(in = notNg, out[15] = ng);
 }
