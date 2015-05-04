@@ -206,13 +206,17 @@ Memory devices are made from numerous flip-flops, all regulated by the same mast
 * tock - high phase
 * implemented by an oscillator in production hardware
 
+### RAM
+
+![RAM](images/ram.png)
+
 ### Implementation of Sequential Logic (Project 03)
 
 The DFF is considered a primitive device and does not need to be implemented.
 
 * [x] Bit
 * [x] Register
-* [ ] RAM8
+* [x] RAM8
 * [ ] RAM64
 * [ ] RAM512
 * [ ] RAM4K
