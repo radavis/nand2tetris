@@ -9,9 +9,37 @@
  */
 
 CHIP PC {
-    IN in[16],load,inc,reset;
+    IN in[16], load, inc, reset;
     OUT out[16];
 
     PARTS:
-    // Put your code here:
+    Inc16(in = reg, out = rPlusOne);
+
+    Mux16(
+        a = reg,
+        b = rPlusOne,
+        sel = inc,
+        out = muxA
+    );
+
+    Mux16(
+        a = muxA,
+        b = in,
+        sel = load,
+        out = muxB
+    );
+
+    Mux16(
+        a = muxB,
+        b = false,
+        sel = reset,
+        out = muxC
+    );
+
+    Register(
+        in = muxC,
+        load = true,
+        out = reg,
+        out = out
+    );
 }
