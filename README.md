@@ -29,10 +29,20 @@ Extract nand2tetris.zip.
 ## Hardware Simulator
 
 ### Add to path
+
 ```
+# in your .bashrc or .zshrc file
+export PATH=/usr/local/bin:$PATH
+```
+
+```
+# from the command line
+
 ln -s ~/code/nand2tetris/tools/HardwareSimulator.sh /usr/local/bin/HardwareSimulator
 chmod +x /usr/local/bin/HardwareSimulator
 ```
+
+Perform this sequence of commands for development tools in the `tools` folder, as necessary.
 
 ### Run a test
 From the `nand2tetris` folder.
@@ -66,11 +76,12 @@ The compiler's task is broken into two stages:
 ## Assembler
 Translates assembly code into binary code.
 
-# Notes
+## Notes
 
 * [Chapter 1 - Boolean Logic](ch01-boolean-logic.md)
 * [Chapter 2 - Boolean Arithmetic](ch02-boolean-arithmetic.md)
 * [Chapter 3 - Sequential Logic](ch03-sequential-logic.md)
+* [Chapter 4 - Machine Lanugage](ch04-machine-language.md)
 
 
 ## References
