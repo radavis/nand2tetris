@@ -15,16 +15,16 @@ CHIP RAM64 {
     // address MSB selects RAM8
     // address LSB selects the Register
     DMux8Way(
-      in = load,
-      sel = address[3..5],
-      a = selR0,
-      b = selR1,
-      c = selR2,
-      d = selR3,
-      e = selR4,
-      f = selR5,
-      g = selR6,
-      h = selR7
+        in = load,
+        sel = address[3..5],
+        a = selR0,
+        b = selR1,
+        c = selR2,
+        d = selR3,
+        e = selR4,
+        f = selR5,
+        g = selR6,
+        h = selR7
     );
 
     RAM8(in = in, load = selR0, address = address[0..2], out = r0);
@@ -37,15 +37,15 @@ CHIP RAM64 {
     RAM8(in = in, load = selR7, address = address[0..2], out = r7);
 
     Mux8Way16(
-      a = r0,
-      b = r1,
-      c = r2,
-      d = r3,
-      e = r4,
-      f = r5,
-      g = r6,
-      h = r7,
-      sel = address[3..5],
-      out = out
+        a = r0,
+        b = r1,
+        c = r2,
+        d = r3,
+        e = r4,
+        f = r5,
+        g = r6,
+        h = r7,
+        sel = address[3..5],
+        out = out
     );
 }

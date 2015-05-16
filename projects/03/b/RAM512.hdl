@@ -1,6 +1,4 @@
-// This file is part of the materials accompanying the book
-// "The Elements of Computing Systems" by Nisan and Schocken,
-// MIT Press. Book site: www.idc.ac.il/tecs// File name: projects/03/b/RAM512.hdl
+// File name: projects/03/b/RAM512.hdl
 
 /**
  * Memory of 512 registers, each 16 bit-wide. Out holds the value
@@ -14,5 +12,40 @@ CHIP RAM512 {
     OUT out[16];
 
     PARTS:
-    // Put your code here:
+    // address MSB selects RAM64
+    // address LSB selects the Register
+    DMux8Way(
+        in = load,
+        sel = address[6..8],
+        a = selR0,
+        b = selR1,
+        c = selR2,
+        d = selR3,
+        e = selR4,
+        f = selR5,
+        g = selR6,
+        h = selR7
+    );
+
+    RAM64(in = in, load = selR0, address = address[0..5], out = r0);
+    RAM64(in = in, load = selR1, address = address[0..5], out = r1);
+    RAM64(in = in, load = selR2, address = address[0..5], out = r2);
+    RAM64(in = in, load = selR3, address = address[0..5], out = r3);
+    RAM64(in = in, load = selR4, address = address[0..5], out = r4);
+    RAM64(in = in, load = selR5, address = address[0..5], out = r5);
+    RAM64(in = in, load = selR6, address = address[0..5], out = r6);
+    RAM64(in = in, load = selR7, address = address[0..5], out = r7);
+
+    Mux8Way16(
+        a = r0,
+        b = r1,
+        c = r2,
+        d = r3,
+        e = r4,
+        f = r5,
+        g = r6,
+        h = r7,
+        sel = address[6..8],
+        out = out
+    );
 }
