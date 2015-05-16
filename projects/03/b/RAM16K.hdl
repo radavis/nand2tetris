@@ -12,5 +12,29 @@ CHIP RAM16K {
     OUT out[16];
 
     PARTS:
-    // Put your code here:
+    // address MSB selects RAM4K
+    // address LSB selects the Register
+    DMux4Way(
+        in = load,
+        sel = address[12..13],
+        a = selR0,
+        b = selR1,
+        c = selR2,
+        d = selR3
+    );
+
+    RAM4K(in = in, load = selR0, address = address[0..11], out = r0);
+    RAM4K(in = in, load = selR1, address = address[0..11], out = r1);
+    RAM4K(in = in, load = selR2, address = address[0..11], out = r2);
+    RAM4K(in = in, load = selR3, address = address[0..11], out = r3);
+
+    Mux4Way16(
+        a = r0,
+        b = r1,
+        c = r2,
+        d = r3,
+        sel = address[12..13],
+        out = out
+    );
+
 }

@@ -219,8 +219,8 @@ The DFF is considered a primitive device and does not need to be implemented.
 * [x] RAM8
 * [x] RAM64
 * [x] RAM512
-* [ ] RAM4K
-* [ ] RAM16K
+* [x] RAM4K
+* [x] RAM16K
 * [x] PC
 
 ## References
