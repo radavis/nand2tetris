@@ -28,9 +28,7 @@ add, subtract, and, or, not, negate, shift, ...
 
 ```
 ADD R2, R1, R3    // R2 ← R1 + R3
-
 ADD R2, R1, foo   // R2 ← R1 + value at pointer 'foo'
-
 AND R1, R1, R2    // R1 ← R1 & R2
 ```
 
@@ -64,7 +62,6 @@ STR R2, x         // x ← R2
 
 ```
 // high-level implementation
-
 while (R1 >= 0) {
   // code segment 1
 }
@@ -74,7 +71,6 @@ while (R1 >= 0) {
 
 ```
 // low-level implementation
-
 beginWhile:
   JNG R1, endWhile
   // code segment 1
@@ -84,9 +80,9 @@ endWhile:
   // code segment 2
 ```
 
-* repetition
-* conditional execution
-* subroutine calling
+* repetition - go back to the start of a loop
+* conditional execution - if..else
+* subroutine calling - execute a block of code
 
 
 ## Hack Machine Language

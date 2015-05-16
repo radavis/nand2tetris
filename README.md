@@ -37,7 +37,6 @@ export PATH=/usr/local/bin:$PATH
 
 ```
 # from the command line
-
 ln -s ~/code/nand2tetris/tools/HardwareSimulator.sh /usr/local/bin/HardwareSimulator
 chmod +x /usr/local/bin/HardwareSimulator
 ```
